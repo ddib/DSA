@@ -1,9 +1,13 @@
 def selection_sort(arr):
-    """
-    Args:
-     arr(list_int32)
-    Returns:
-     list_int32
+    """ 
+    Input: Array of comparables
+    Output: Sorted array 
+    Complexity:
+     * Time: O(n²)
+     * Space: O(1) 
+    Properties:
+     * In-place
+     * Not stable
     """
     n = len(arr)
     for i in range(n - 1):
