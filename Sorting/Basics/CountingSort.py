@@ -3,7 +3,7 @@ def counting_sort(arr):
     Input: Array of integers
     Output: Sorted array 
     Complexity:
-     * Time: O(log(n + k)), k is the range of numbers in the array 
+     * Time: O(n + k), k is the range of numbers in the array 
      * Space: O(k) 
     Properties:
      * not in-place
