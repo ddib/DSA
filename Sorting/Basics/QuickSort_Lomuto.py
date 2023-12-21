@@ -6,7 +6,7 @@ def quick_sort(arr):
     Output: Sorted array 
     Complexity:
      * Time: θ(nlog(n)), O(n²)
-     * Space: O(1) 
+     * Space: θ(log(n)), O(n)  
     Properties:
      * In-place
      * Not stable
