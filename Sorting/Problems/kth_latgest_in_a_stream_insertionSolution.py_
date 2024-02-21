@@ -1,0 +1,28 @@
+def kth_largest(k, initial_stream, append_stream):
+    """
+    Problem:
+    Given an initial list along with another list of numbers to be appended with the initial list and an integer k, 
+    return an array of the k-th largest element after adding each element from the stream to the initial list.  
+    https://leetcode.com/problems/kth-largest-element-in-a-stream/
+    
+    Complexity:
+    * Time: O(nlog(n) + m * (n + m))
+    * Space: O(m)
+    """
+
+    result = []
+    initial_stream.sort() # O(nlog(n))
+    for item in append_stream:
+        insertionSort_helper(initial_stream, item) #O(m * (n+m))
+        result.append(initial_stream[-k])
+    return result
+    
+def insertionSort_helper(arr, item):
+    arr.append(item)
+    index = len(arr) - 2
+    while index >= 0 and item < arr[index]:
+        arr[index + 1] = arr[index]
+        index -= 1
+        
+    arr[index + 1] = item
+        
