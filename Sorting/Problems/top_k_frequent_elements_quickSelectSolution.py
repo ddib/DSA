@@ -5,7 +5,7 @@ def find_top_k_frequent_elements(arr, k):
     https://leetcode.com/problems/top-k-frequent-elements
     
     Complexity:
-    * Time: θ(nlog(n)), O(n²)
+    * Time: θ(n), O(n²)
     * Space: O(n)
     """
 
